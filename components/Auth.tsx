@@ -16,13 +16,13 @@ interface LoginProps {
 export default function LoginPage({title, subTitle, buttonText, description, navigationText, secondNavigationText, navigationLink}: LoginProps) {
   return (
     <div className={`min-h-screen flex ${raleway.className} `}>
-      <div className="flex-1 bg-gradient-to-r from-[#ffffff] via-[#bbdb9e] to-secondary md:flex flex-col justify-evenly items-end hidden">
-        <div className="mx-10">
+      <div className="flex-1 bg-gradient-to-r from-[#ffffff] via-[#bbdb9e] to-secondary md:flex flex-col justify-between items-end hidden">
+        <div className="mx-10 mt-10">
             <Image src="/images/logo.png" width={200} height={200} alt="logo"/>
             <p className={`text-black text-2xl mt-4 ${bawor.className}`}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe.</p>
         </div>
-        <div className="bg-red-900 items-end text-end mr-9">
-            <Image src={mock} width={200} height={200} alt="logo"/>
+        <div className="items-end">
+            <Image src='/images/book-illustrator.png' width={600} height={600} alt="book illustrator"/>
         </div>
       </div>
       <div className="flex-1 bg-white p-8 flex items-center justify-center">
