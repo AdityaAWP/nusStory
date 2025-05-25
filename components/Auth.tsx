@@ -3,9 +3,17 @@ import { Button } from "@/components/ui/button"
 import mock from '../public/images/jago.jpeg'
 
 import { raleway } from "@/app/fonts"
-
-
-export default function LoginPage() {
+import Link from "next/link";
+interface LoginProps {
+  title: string;
+  subTitle: string;
+  buttonText: string;
+  description: string;
+  navigationText: string;
+  secondNavigationText?: string;
+  navigationLink: string;
+}
+export default function LoginPage({title, subTitle, buttonText, description, navigationText, secondNavigationText, navigationLink}: LoginProps) {
   return (
     <div className={`min-h-screen flex ${raleway.className} `}>
       <div className="flex-1 bg-gradient-to-r from-[#9c7766] via-[#724e3c] to-[#5C3D2E] md:flex flex-col justify-evenly items-end hidden">
@@ -20,8 +28,8 @@ export default function LoginPage() {
       <div className="flex-1 bg-white p-8 flex items-center justify-center">
         <div className="w-full max-w-md space-y-6">
           <div className="text-center space-y-2">
-            <h2 className="text-2xl font-bold text-gray-900">Selamat Datang Kembali</h2>
-            <p className="text-gray-600">Silakan masuk untuk melanjutkan perjalanan sejarah Anda</p>
+            <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
+            <p className="text-gray-600">{subTitle}</p>
           </div>
 
           <div className="space-y-4">
@@ -30,19 +38,19 @@ export default function LoginPage() {
             className="w-full h-12 flex items-center justify-center gap-3 border-gray-300 cursor-[url(/jago.cur),_pointer]"
           >
             <Image src={mock} width={20} height={20} alt="google-logo"/>
-              Masuk dengan Google
+              {buttonText}
             </Button>
 
             <div className="text-center">
               <p className="text-sm  mb-4">
-                Kami hanya mendukung login melalui Google untuk keamanan dan kemudahan akses.
+                {description}
               </p>
 
               <p className="text-sm ">
-                Belum memiliki akun?{" "}
-                <a href="#" className="text-green-600">
-                  Daftar sekarang
-                </a>
+                {navigationText}
+                <Link href={navigationLink} className="text-green-600">
+                  {secondNavigationText}
+                </Link>
               </p>
             </div>
           </div>
