@@ -29,6 +29,7 @@ export default function QuizMap({
     <MapContainer
       center={[-2.5, 118]}
       zoom={5}
+      minZoom={5}
       scrollWheelZoom={true}
       style={{ height: '100%', width: '100%' }}
       maxBounds={[
