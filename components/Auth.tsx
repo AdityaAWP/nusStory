@@ -19,7 +19,7 @@ export default function LoginPage({title, subTitle, buttonText, description, nav
       <div className="flex-1 bg-gradient-to-r from-[#ffffff] via-[#bbdb9e] to-secondary md:flex flex-col justify-between items-end hidden">
         <div className="mx-10 mt-10">
             <Image src="/images/logo.png" width={200} height={200} alt="logo"/>
-            <p className={`text-black text-2xl mt-4 ${bawor.className}`}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe.</p>
+            <p className={`text-primary text-2xl mt-4 ${bawor.className}`}>Menjaga Sejarah dan Cerita Indonesia Melalui Pendidkan Sejarah Yang Bermakna.</p>
         </div>
         <div className="items-end">
             <Image src='/images/book-illustrator.png' width={600} height={600} alt="book illustrator"/>
@@ -28,14 +28,14 @@ export default function LoginPage({title, subTitle, buttonText, description, nav
       <div className="flex-1 bg-white p-8 flex items-center justify-center">
         <div className="w-full max-w-md space-y-6">
           <div className="text-center space-y-2">
-            <h2 className={`text-2xl font-bold text-gray-900 ${bawor.className}`}>{title}</h2>
+            <h2 className={`text-2xl font-bold text-primary ${bawor.className}`}>{title}</h2>
             <p className="text-gray-600">{subTitle}</p>
           </div>
 
           <div className="space-y-4">
           <Button
             variant="outline"
-            className="w-full h-12 flex items-center justify-center gap-3 border-gray-300 cursor-[url(/jago.cur),_pointer]"
+            className="w-full h-12 flex items-center justify-center gap-3 border-gray-300 cursor-pointer hover:bg-gray-100 transition-colors"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
                 <path
@@ -64,7 +64,7 @@ export default function LoginPage({title, subTitle, buttonText, description, nav
               </p>
 
               <p className="text-sm ">
-                {navigationText}
+                {navigationText} {" "}
                 <Link href={navigationLink} className="text-green-600">
                   {secondNavigationText}
                 </Link>
