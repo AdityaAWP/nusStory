@@ -1,6 +1,3 @@
-'use client'
-
-import { useState } from 'react'
 import { MapContainer, TileLayer, Marker, useMapEvents } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -12,18 +9,22 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png',
 })
 
-function ClickHandler({ setMarker }: { setMarker: (latlng: L.LatLng) => void }) {
+function ClickHandler({ onAddMarker }: { onAddMarker: (latlng: L.LatLng) => void }) {
   useMapEvents({
     click(e) {
-      setMarker(e.latlng)
+      onAddMarker(e.latlng)
     },
   })
   return null
 }
 
-export default function QuizMap() {
-  const [marker, setMarker] = useState<L.LatLng | null>(null)
-
+export default function QuizMap({
+  markers,
+  onAddMarker,
+}: {
+  markers: L.LatLng[]
+  onAddMarker: (latlng: L.LatLng) => void
+}) {
   return (
     <MapContainer
       center={[-2.5, 118]}
@@ -39,10 +40,10 @@ export default function QuizMap() {
       <TileLayer
         url="https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}"
       />
-
-      <ClickHandler setMarker={setMarker} />
-
-      {marker && <Marker position={marker} />}
+      {markers.map((pos, i) => (
+        <Marker key={i} position={pos} />
+      ))}
+      <ClickHandler onAddMarker={onAddMarker} />
     </MapContainer>
   )
 }
