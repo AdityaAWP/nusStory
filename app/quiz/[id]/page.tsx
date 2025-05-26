@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { X, MapPin, RotateCcw, Flag, Clock, Star } from "lucide-react"
 import Image from "next/image"
+import QuizMap from "@/components/ui/quizMap"
 
 interface QuizDetailProps {
   quizId?: string
@@ -22,6 +23,7 @@ const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
 
 
   return (
+    <>
     <div className="min-h-screen bg-gray-50 flex flex-col">
       {/* Header */}
       <div className="bg-white border-b border-gray-200 p-4 flex items-center justify-between">
@@ -40,11 +42,15 @@ const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
             Menyerah
           </Button>
         </div>
-      </div>
+      </div>      
 
       <div className="flex-1 flex">
         <div className="flex-1 relative bg-gray-300">
-          <div className="absolute top-4 left-4 z-10 flex gap-2">
+          <div className="absolute inset-0 z-0">
+            <QuizMap />
+          </div>
+
+          <div className="absolute top-4 left-12 z-10 flex gap-2">
             <Card className="shadow-lg">
               <CardContent className="p-3">
                 <div className="text-center">
@@ -55,7 +61,6 @@ const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
                 </div>
               </CardContent>
             </Card>
-
             <Card className="shadow-lg">
               <CardContent className="p-3">
                 <div className="text-center">
@@ -69,7 +74,7 @@ const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
             </Card>
           </div>
 
-          {/* Control Buttons */}
+          {/* Overlay: Control Buttons */}
           <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-10">
             <div className="flex gap-3">
               <Button variant="outline" className="bg-white/90 backdrop-blur-sm hover:bg-white">
@@ -117,6 +122,7 @@ const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
