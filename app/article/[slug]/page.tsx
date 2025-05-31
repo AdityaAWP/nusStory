@@ -144,7 +144,7 @@ export default function ArticleDetailPage({ params }: { params: { slug: string }
 
   if (!article) {
     return (
-      <div className="min-h-screen bg-[#f5f1eb] flex items-center justify-center">
+      <div className="min-h-screen bg-surface flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold mb-4">Article Not Found</h1>
           <Link href="/articles" className="text-blue-600 hover:underline">
@@ -156,7 +156,7 @@ export default function ArticleDetailPage({ params }: { params: { slug: string }
   }
 
   return (
-    <div className={`min-h-screen bg-[#f5f1eb] ${raleway.className}`}>
+    <div className={`min-h-screen bg-surface ${raleway.className}`}>
       {/* Navigation */}
       <nav className="p-6">
         <Link
