@@ -138,8 +138,15 @@ In a world that often feels divided, street art festivals remind us of our share
   },
 ]
 
-export default function ArticleDetailPage({ params }: { params: { slug: string } }) {
-  const article = articles.find((a) => a.slug === params.slug)
+// Updated component for Next.js 15
+export default async function ArticleDetailPage({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> 
+}) {
+  // Await the params promise
+  const { slug } = await params
+  const article = articles.find((a) => a.slug === slug)
 
   if (!article) {
     return (
