@@ -73,7 +73,8 @@ export default function InteractiveEraTimeline({ isDarkMode = false }: Interacti
   return (
     <section className="py-20 relative overflow-hidden">
       <div className="container mx-auto px-8">
-        
+        {/* Floating Navigation */}
+
 
         {/* Interactive Timeline */}
         <div className="relative">
