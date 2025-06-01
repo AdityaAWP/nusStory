@@ -15,6 +15,7 @@ const Navbar = () => {
     { name: "Galeri", href: "/gallery" },
     { name: "Quiz", href: "/quiz" },
     { name: "Artikel", href: "/articles" },
+    { name: "Time Travel", href: "/timetravel" },
   ]
 
   return (

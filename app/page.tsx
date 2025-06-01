@@ -5,12 +5,13 @@ import InteractiveEraTimeline from "@/components/TimelineLanding";
 
 export default function Home() {
   return (
-   <div>
+   <div className="bg-[#f3fde2]">
     <ParallaxHero/>
     {/* <ArticleLanding/> */}
     <InteractiveEraTimeline/>
     <hr className="mx-40"/>
     <HistoricalGallery/>
+    <hr />
     <QuizLanding/>
    </div>
   );
