@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import mock from '../public/images/jago.jpeg'
 
 import { bawor, raleway } from "@/app/fonts"
 import Link from "next/link";

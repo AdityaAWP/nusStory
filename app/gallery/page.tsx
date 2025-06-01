@@ -138,7 +138,6 @@ const historicalFigures: HistoricalFigure[] = [
   },
 ]
 
-// Animation variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -206,24 +205,6 @@ const searchVariants = {
     },
   },
 }
-
-const statsVariants = {
-  hidden: {
-    opacity: 0,
-    y: 100,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 80,
-      damping: 15,
-      delay: 0.8,
-    },
-  },
-}
-
 const cardHoverVariants = {
   hover: {
     scale: 1.05,

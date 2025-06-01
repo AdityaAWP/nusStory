@@ -5,7 +5,6 @@ import Image from "next/image"
 
 export default function ParallaxHero() {
   const [scrollY, setScrollY] = useState(0)
-  const heroRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
