@@ -1,5 +1,7 @@
 "use client"
 
+import TimeTravelMap from "@/components/ui/timeTravelMap"
+
 export default function MapPage() {
   return (
     <div className="min-h-screen bg-white">
@@ -15,6 +17,7 @@ export default function MapPage() {
         </div>
 
         <div className="bg-gray-400 rounded-lg shadow-lg" style={{ height: "400px" }}>
+          <TimeTravelMap />
         </div>
       </div>
     </div>

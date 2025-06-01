@@ -1,0 +1,224 @@
+[
+  {
+    "name": "Aceh",
+    "subtitle": "Provinsi paling barat Indonesia dengan kekayaan budaya Islam yang kuat dan keindahan alam yang memukau",
+    "latitude": 4.695135,
+    "longitude": 96.749399
+  },
+  {
+    "name": "Sumatera Utara",
+    "subtitle": "Rumah bagi suku Batak dengan Danau Toba sebagai destinasi wisata utama dan kekayaan budaya yang beragam",
+    "latitude": 2.115354,
+    "longitude": 99.545097
+  },
+  {
+    "name": "Sumatera Barat",
+    "subtitle": "Pusat budaya Minangkabau dengan rumah gadang, rendang, dan keindahan alam yang memukau",
+    "latitude": -0.739939,
+    "longitude": 100.800005
+  },
+  {
+    "name": "Riau",
+    "subtitle": "Pusat industri minyak dan perkebunan kelapa sawit dengan kekayaan budaya Melayu yang kaya",
+    "latitude": 0.293347,
+    "longitude": 101.706829
+  },
+  {
+    "name": "Kepulauan Riau",
+    "subtitle": "Gugusan pulau indah dengan potensi wisata bahari dan perdagangan internasional",
+    "latitude": 0.916667,
+    "longitude": 104.45
+  },
+  {
+    "name": "Jambi",
+    "subtitle": "Pusat peradaban Melayu kuno dengan kekayaan alam dan budaya yang beragam",
+    "latitude": -1.609972,
+    "longitude": 103.607254
+  },
+  {
+    "name": "Sumatera Selatan",
+    "subtitle": "Pusat Kerajaan Sriwijaya dengan kekayaan budaya dan kuliner yang khas",
+    "latitude": -3.319437,
+    "longitude": 103.914399
+  },
+  {
+    "name": "Bangka Belitung",
+    "subtitle": "Gugusan pulau dengan pantai-pantai indah dan tambang timah yang melimpah",
+    "latitude": -2.133333,
+    "longitude": 106.133333
+  },
+  {
+    "name": "Bengkulu",
+    "subtitle": "Rumah bagi bunga Rafflesia arnoldii dan kekayaan alam yang melimpah",
+    "latitude": -3.795555,
+    "longitude": 102.259167
+  },
+  {
+    "name": "Lampung",
+    "subtitle": "Pintu gerbang Sumatera dengan kekayaan budaya dan alam yang beragam",
+    "latitude": -5.429666,
+    "longitude": 105.262123
+  },
+  {
+    "name": "DKI Jakarta",
+    "subtitle": "Ibu kota Indonesia dengan pusat pemerintahan, bisnis, dan budaya yang dinamis",
+    "latitude": -6.208763,
+    "longitude": 106.845599
+  },
+  {
+    "name": "Banten",
+    "subtitle": "Pintu gerbang barat Jawa dengan kekayaan sejarah dan budaya yang kaya",
+    "latitude": -6.405817,
+    "longitude": 106.064018
+  },
+  {
+    "name": "Jawa Barat",
+    "subtitle": "Pusat budaya Sunda dengan keindahan alam dan kekayaan budaya yang beragam",
+    "latitude": -6.914744,
+    "longitude": 107.609811
+  },
+  {
+    "name": "Jawa Tengah",
+    "subtitle": "Jantung budaya Jawa dengan warisan sejarah dan budaya yang kaya",
+    "latitude": -6.993214,
+    "longitude": 110.4229
+  },
+  {
+    "name": "DI Yogyakarta",
+    "subtitle": "Pusat budaya dan pendidikan dengan warisan kerajaan yang kaya",
+    "latitude": -7.795579,
+    "longitude": 110.369489
+  },
+  {
+    "name": "Jawa Timur",
+    "subtitle": "Pusat industri dan budaya dengan kekayaan alam dan sejarah yang beragam",
+    "latitude": -7.257472,
+    "longitude": 112.752088
+  },
+  {
+    "name": "Bali",
+    "subtitle": "Pulau dengan budaya Hindu yang kaya dan destinasi wisata internasional",
+    "latitude": -8.409518,
+    "longitude": 115.188919
+  },
+  {
+    "name": "Nusa Tenggara Barat",
+    "subtitle": "Rumah bagi suku Sasak dengan keindahan alam dan budaya yang unik",
+    "latitude": -8.583333,
+    "longitude": 116.116667
+  },
+  {
+    "name": "Nusa Tenggara Timur",
+    "subtitle": "Gugusan pulau dengan keanekaragaman budaya dan keindahan alam yang memukau",
+    "latitude": -8.583333,
+    "longitude": 120.95
+  },
+  {
+    "name": "Kalimantan Barat",
+    "subtitle": "Pusat budaya Dayak dengan kekayaan alam dan hutan yang melimpah",
+    "latitude": -0.016667,
+    "longitude": 109.333333
+  },
+  {
+    "name": "Kalimantan Tengah",
+    "subtitle": "Rumah bagi suku Dayak dengan hutan tropis dan kekayaan alam yang berlimpah",
+    "latitude": -2.216667,
+    "longitude": 113.916667
+  },
+  {
+    "name": "Kalimantan Selatan",
+    "subtitle": "Pusat budaya Banjar dengan kekayaan alam dan sejarah yang kaya",
+    "latitude": -3.316667,
+    "longitude": 114.583333
+  },
+  {
+    "name": "Kalimantan Timur",
+    "subtitle": "Pusat industri migas dan pertambangan dengan kekayaan alam yang melimpah",
+    "latitude": -0.502106,
+    "longitude": 117.153709
+  },
+  {
+    "name": "Kalimantan Utara",
+    "subtitle": "Provinsi termuda di Kalimantan dengan potensi sumber daya alam yang besar",
+    "latitude": 3.316667,
+    "longitude": 117.566667
+  },
+  {
+    "name": "Sulawesi Utara",
+    "subtitle": "Pusat budaya Minahasa dengan keindahan alam dan kuliner yang khas",
+    "latitude": 1.493056,
+    "longitude": 124.841261
+  },
+  {
+    "name": "Gorontalo",
+    "subtitle": "Pusat budaya Gorontalo dengan kekayaan alam dan budaya yang unik",
+    "latitude": 0.533333,
+    "longitude": 123.066667
+  },
+  {
+    "name": "Sulawesi Tengah",
+    "subtitle": "Rumah bagi suku Kaili dengan keindahan alam dan budaya yang beragam",
+    "latitude": -0.9,
+    "longitude": 119.783333
+  },
+  {
+    "name": "Sulawesi Barat",
+    "subtitle": "Pusat budaya Mandar dengan keindahan alam dan budaya yang kaya",
+    "latitude": -2.668611,
+    "longitude": 118.862222
+  },
+  {
+    "name": "Sulawesi Selatan",
+    "subtitle": "Pusat budaya Bugis-Makassar dengan kekayaan maritim dan budaya yang kuat",
+    "latitude": -5.133333,
+    "longitude": 119.416667
+  },
+  {
+    "name": "Sulawesi Tenggara",
+    "subtitle": "Pusat budaya Buton dengan keindahan alam dan budaya yang beragam",
+    "latitude": -3.9675,
+    "longitude": 122.594722
+  },
+  {
+    "name": "Maluku",
+    "subtitle": "Gugusan pulau rempah dengan kekayaan budaya dan sejarah yang kaya",
+    "latitude": -3.238462,
+    "longitude": 130.145273
+  },
+  {
+    "name": "Maluku Utara",
+    "subtitle": "Pusat perdagangan rempah dengan kekayaan budaya dan sejarah yang unik",
+    "latitude": 0.783333,
+    "longitude": 127.366667
+  },
+  {
+    "name": "Papua",
+    "subtitle": "Pulau terbesar kedua di Indonesia dengan keanekaragaman budaya dan alam yang luar biasa",
+    "latitude": -2.533333,
+    "longitude": 140.716667
+  },
+  {
+    "name": "Papua Barat",
+    "subtitle": "Rumah bagi suku Arfak dengan kekayaan alam dan budaya yang unik",
+    "latitude": -0.866667,
+    "longitude": 134.083333
+  },
+  {
+    "name": "Papua Tengah",
+    "subtitle": "Provinsi baru di jantung Papua dengan kekayaan alam dan budaya yang beragam",
+    "latitude": -2.533333,
+    "longitude": 138.716667
+  },
+  {
+    "name": "Papua Pegunungan",
+    "subtitle": "Rumah bagi suku Dani dengan keindahan alam pegunungan yang memukau",
+    "latitude": -4.083333,
+    "longitude": 138.083333
+  },
+  {
+    "name": "Papua Selatan",
+    "subtitle": "Provinsi dengan kekayaan alam dan budaya yang unik di selatan Papua",
+    "latitude": -5.466667,
+    "longitude": 140.333333
+  }
+]
