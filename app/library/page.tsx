@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Search, ChevronRight, X, ChevronLeft, BookOpen } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence, PanInfo } from "framer-motion"
 
 const allBooks = [
   {
@@ -171,7 +171,8 @@ export default function LibraryPage() {
     }
   }
 
-  const handleSwipe = (event: any, info: any) => {
+
+  const handleSwipe = (event: PointerEvent, info: PanInfo) => {
     const swipeThreshold = 100
     if (Math.abs(info.offset.x) > swipeThreshold) {
       if (info.offset.x > 0) {

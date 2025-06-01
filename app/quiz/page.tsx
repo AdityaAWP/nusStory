@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { BookOpen, CheckCircle, Play, Users } from "lucide-react"
-import Image from "next/image"
 import { raleway } from "../fonts"
 import Link from "next/link"
 

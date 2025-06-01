@@ -218,7 +218,7 @@ export default function ArticleDetailPage({ params }: { params: { slug: string }
         {/* Quote Section */}
         <div className="text-center mb-12">
           <blockquote className="text-xl md:text-2xl font-bold text-black uppercase tracking-wide border-t border-b border-black py-6">
-            "{article.description}"
+            {article.description}
           </blockquote>
         </div>
 
