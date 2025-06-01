@@ -138,7 +138,6 @@ In a world that often feels divided, street art festivals remind us of our share
   },
 ]
 
-// Updated component for Next.js 15
 export default async function ArticleDetailPage({ 
   params 
 }: { 

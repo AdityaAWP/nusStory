@@ -236,7 +236,7 @@ export default function GalleryPage() {
 
   return (
     <motion.div
-      className="min-h-screen bg-[#f5f1e8] p-6"
+      className="min-h-screen bg-white p-6"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
