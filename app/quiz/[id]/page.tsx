@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -9,8 +9,9 @@ import Image from "next/image"
 import QuizMap from "@/components/ui/quizMap"
 import L from "leaflet"
 
-interface QuizDetailProps {
-  quizId?: string
+// Next.js page props interface for dynamic routes
+interface PageProps {
+  params: Promise<{ id: string }>
 }
 
 function getDistanceKm(lat1: number, lon1: number, lat2: number, lon2: number) {
@@ -54,7 +55,8 @@ const dummyQuestions = [
   }
 ]
 
-const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
+// Main quiz component
+function QuizDetailContent({ quizId }: { quizId: string }) {
   const [currentRound, setCurrentRound] = useState(1)
   const [score, setScore] = useState(0)
   const [markers, setMarkers] = useState<L.LatLng[]>([]) 
@@ -221,4 +223,26 @@ const QuizDetail = ({ quizId = "1" }: QuizDetailProps) => {
   )
 }
 
-export default QuizDetail
+// Next.js page component
+export default function QuizDetailPage({ params }: PageProps) {
+  const [quizId, setQuizId] = useState<string>("")
+
+  useEffect(() => {
+    // Resolve the params promise and extract the id
+    params.then(({ id }) => {
+      setQuizId(id)
+    })
+  }, [params])
+
+  if (!quizId) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-lg">Loading...</div>
+        </div>
+      </div>
+    )
+  }
+
+  return <QuizDetailContent quizId={quizId} />
+}
