@@ -17,7 +17,6 @@ interface ArticleData {
   content?: string
 }
 
-// This would typically come from a database or CMS
 const articles: ArticleData[] = [
   {
     id: 1,

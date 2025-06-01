@@ -100,7 +100,7 @@ export default function GalleryPage() {
               transition={{ duration: 0.6, ease: "easeOut" }}
               className="text-white text-2xl font-bold capitalize"
             >
-              Galeri Nus Story
+              Profile History
             </motion.p>
 
             <motion.p
@@ -258,7 +258,7 @@ export default function GalleryPage() {
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.3 }}
-                        className="text-2xl font-bold text-white mb-2"
+                        className="text-2xl mt-9 font-bold text-white mb-2"
                       >
                         {selectedImage.title}
                       </motion.h2>
