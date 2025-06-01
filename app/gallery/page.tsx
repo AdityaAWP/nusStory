@@ -35,7 +35,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Proklamasi Kemerdekaan", "Konferensi Asia Afrika", "Gerakan Non-Blok"],
     period: "1901-1970",
     category: "Presiden Pertama",
-    image: "/images/jago.jpeg",
+    image: "/images/soekarno.png",
     description: "Presiden pertama Republik Indonesia dan Proklamator kemerdekaan Indonesia.",
   },
   {
@@ -49,7 +49,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Surat-surat Kartini", "Perjuangan Emansipasi Wanita", "Pendidikan untuk Perempuan"],
     period: "1879-1904",
     category: "Pahlawan Emansipasi",
-    image: "/images/jago.jpeg",
+    image: "/images/soekarno.png",
     description: "Pelopor kebangkitan perempuan pribumi dan pejuang emansipasi wanita Indonesia.",
   },
   {
@@ -63,7 +63,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Perang Diponegoro", "Perlawanan terhadap Belanda", "Perang Jawa"],
     period: "1785-1855",
     category: "Pahlawan Nasional",
-    image: "/images/jago.jpeg",
+    image: "/images/soekarno.png",
     description: "Pemimpin Perang Diponegoro dan pahlawan perlawanan terhadap kolonial Belanda.",
   },
   {
@@ -77,7 +77,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Proklamasi Kemerdekaan", "Wakil Presiden Pertama", "Bapak Koperasi"],
     period: "1902-1980",
     category: "Wakil Presiden Pertama",
-    image: "/images/jago.jpeg",
+    image: "/images/soekarno.png",
     description: "Wakil Presiden pertama Indonesia dan Proklamator kemerdekaan Indonesia.",
   },
   {
@@ -91,7 +91,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Panglima Besar TNI", "Perang Kemerdekaan", "Serangan Umum 1 Maret"],
     period: "1916-1950",
     category: "Panglima Besar",
-    image: "/images/jago.jpeg",
+    image: "/images/dipo.jpg",
     description: "Panglima Besar Tentara Nasional Indonesia dan pahlawan perang kemerdekaan.",
   },
   {
@@ -105,7 +105,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Perang Aceh", "Perlawanan terhadap Belanda", "Pahlawan Wanita"],
     period: "1848-1908",
     category: "Pahlawan Nasional",
-    image: "/images/jago.jpeg",
+    image: "/images/kariadi.jpg",
     description: "Pahlawan nasional dari Aceh yang memimpin perlawanan terhadap Belanda.",
   },
   {
@@ -119,7 +119,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Perang Padri", "Perlawanan Minangkabau", "Pemimpin Agama"],
     period: "1772-1864",
     category: "Pahlawan Nasional",
-    image: "/images/jago.jpeg",
+    image: "/images/soekarno.png",
     description: "Pemimpin Perang Padri dan ulama besar dari Minangkabau.",
   },
   {
@@ -133,7 +133,7 @@ const historicalFigures: HistoricalFigure[] = [
     majorEvents: ["Perang Makassar", "Perlawanan Gowa", "Ayam Jantan dari Timur"],
     period: "1631-1670",
     category: "Pahlawan Nasional",
-    image: "/images/jago.jpeg",
+    image: "/images/soekarno.png",
     description: "Raja Gowa yang dijuluki 'Ayam Jantan dari Timur' karena keberaniannya.",
   },
 ]
