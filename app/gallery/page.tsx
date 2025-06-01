@@ -291,7 +291,7 @@ export default function GalleryPage() {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   selectedCategory === category
-                    ? "bg-amber-600 text-white"
+                    ? "bg-secondary text-white"
                     : "bg-white/70 text-amber-700 hover:bg-amber-100"
                 }`}
                 initial={{ opacity: 0, scale: 0.8 }}

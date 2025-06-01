@@ -18,12 +18,12 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-[#f3f8eb]">
+    <nav className="sticky top-0 z-50 w-full border-b bg-[#f3fde2]">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-          <Image src={'/images/logo.png'} alt="logo" width={100} height={100}/>
+          <Image src={'/images/logo.png'} alt="logo" width={150} height={150}/>
           </Link>
 
           {/* Desktop Navigation */}
@@ -32,7 +32,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium transition-colors hover:text-primary"
+                className="text-lg font-medium transition-colors hover:text-primary"
               >
                 {item.name}
               </Link>

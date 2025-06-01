@@ -71,11 +71,8 @@ export default function InteractiveEraTimeline({ isDarkMode = false }: Interacti
   }
 
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden bg-[#f3fde2]">
       <div className="container mx-auto px-8">
-        {/* Floating Navigation */}
-
-
         {/* Interactive Timeline */}
         <div className="relative">
           {/* Background Era Display */}
@@ -97,6 +94,7 @@ export default function InteractiveEraTimeline({ isDarkMode = false }: Interacti
           <div className="relative z-10 min-h-[80vh] flex items-center">
             <div className="w-full">
               {/* Era Selector */}
+              <h1 className="text-center pb-9 text-2xl font-extrabold">Artikel NusStory</h1>
               <div className="flex justify-center mb-16">
                 <div className="flex space-x-2 p-2 rounded-full bg-black/10 backdrop-blur-sm">
                   {eras.map((era, index) => (

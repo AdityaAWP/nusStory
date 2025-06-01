@@ -124,7 +124,7 @@ const HistoricalGallery = () => {
   const currentFigure = historicalFigures[currentIndex]
 
   return (
-    <section className="py-16 bg-gradient-to-br from-amber-50 to-orange-50">
+    <section className="py-16 bg-[#f3fde2]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Galeri Tokoh Bersejarah</h2>
@@ -204,7 +204,7 @@ const HistoricalGallery = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-4">
+                <div className="inline-block px-3 py-1 bg-secondary text-white rounded-full text-sm font-medium mb-4">
                   {currentFigure.category}
                 </div>
 
@@ -230,7 +230,7 @@ const HistoricalGallery = () => {
                   <ul className="space-y-2">
                     {currentFigure.majorEvents.map((event, index) => (
                       <li key={index} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-amber-500 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0" />
                         <span className="text-gray-700">{event}</span>
                       </li>
                     ))}
@@ -246,7 +246,7 @@ const HistoricalGallery = () => {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? "bg-amber-500" : "bg-gray-300"
+                  index === currentIndex ? "bg-secondary" : "bg-gray-300"
                 }`}
                 onClick={() => {
                   setDirection(index > currentIndex ? 1 : -1)
@@ -259,14 +259,14 @@ const HistoricalGallery = () => {
 
         {/* Read More Section */}
         <div className="text-center mt-16">
-          <Card className="max-w-2xl mx-auto bg-white/80 backdrop-blur-sm border-amber-200">
+          <Card className="max-w-2xl mx-auto bg-white/80 backdrop-blur-sm border-black">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Pelajari Lebih Lanjut</h3>
               <p className="text-gray-600 mb-6">
                 Temukan lebih banyak cerita inspiratif dari para tokoh bersejarah Indonesia dan pelajari bagaimana
                 mereka membentuk bangsa ini menjadi seperti sekarang.
               </p>
-              <Button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3">Baca Selengkapnya</Button>
+              <Button className="bg-secondary hover:bg-[#a4b683] text-white px-8 py-3">Baca Selengkapnya</Button>
             </CardContent>
           </Card>
         </div>

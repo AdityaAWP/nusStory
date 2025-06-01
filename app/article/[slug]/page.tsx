@@ -15,6 +15,7 @@ interface ArticleData {
   tags: string[]
   slug: string
   content?: string
+  videoId?: string // YouTube video ID
 }
 
 const articles: ArticleData[] = [
@@ -29,6 +30,7 @@ const articles: ArticleData[] = [
     date: "1 day",
     tags: ["Art", "History"],
     slug: "hope-dies-last",
+    videoId: "dQw4w9WgXcQ", // Example YouTube video ID
     content: `I know a place. It's somewhere I go when I need to remember your face. We get married in our heads. Something to do while we try to recall how we met. Do you think I have forgotten? Do you think I have forgotten? Do you think I have forgotten about you? You and I (don't let go) were alive (don't let go). With nothing to do I could lay and just look in your eyes. Wait (don't let go) and pretend (don't let go). Hold on and pretend that we'll never end. Do you think I have forgotten? Do you think I have forgotten? Do you think I have forgotten about you? Do you think I have forgotten? Do you think I have forgotten? Do you think I have forgotten about you?
 
 There was something 'bout you that now I can't remember. It's the same damn thing that made my heart surrender. And I miss you on a train, I miss you in the morning. I never know what to think about. I think about you (so don't let go). About you (so don't let go). Do you think I have forgotten About you? (Don't let go) About you About you. Do you think I have forgotten About you? (Don't let go).
@@ -46,6 +48,7 @@ The memories we created together will forever remain in my heart. Every moment w
     date: "2 days",
     tags: ["Psychology", "Art"],
     slug: "dont-close-your-eyes",
+    videoId: "M7lc1UVf-VE", // Example YouTube video ID
     content: `The power of keeping your eyes open to the world around you cannot be understated. In a society that often encourages us to look away from difficult truths, there is profound strength in maintaining our gaze.
 
 When we close our eyes to the beauty and pain of existence, we rob ourselves of the full human experience. Art has always been about seeing - truly seeing - the world in all its complexity and contradiction.
@@ -126,6 +129,7 @@ In our darkest moments, art reminds us that hope is not naive optimism but a cho
     date: "1 week",
     tags: ["Street Art", "Festival"],
     slug: "street-art-festival",
+    videoId: "ZZ5LpwO-An4", // Example YouTube video ID
     content: `Street art festivals represent the democratization of artistic expression. They bring art out of galleries and museums and into the streets, making it accessible to everyone regardless of their economic status or cultural background.
 
 These festivals transform urban landscapes into open-air galleries, where walls become canvases and entire neighborhoods become immersive art experiences. They celebrate the raw, unfiltered creativity that emerges from the streets - art that is immediate, relevant, and deeply connected to the communities where it appears.
@@ -138,10 +142,10 @@ In a world that often feels divided, street art festivals remind us of our share
   },
 ]
 
-export default async function ArticleDetailPage({ 
-  params 
-}: { 
-  params: Promise<{ slug: string }> 
+export default async function ArticleDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
 }) {
   // Await the params promise
   const { slug } = await params
@@ -208,16 +212,44 @@ export default async function ArticleDetailPage({
           </h2>
         </div>
 
-        {/* Main Article Image */}
-        <div className="mb-12 text-center">
-          <div className="inline-block border-2 border-black">
-            <Image
-              src={article.image || "/placeholder.svg"}
-              alt={article.title}
-              width={200}
-              height={100}
-              className="w-full object-cover"
-            />
+        {/* Media Section - Image and Video Side by Side */}
+        <div className="mb-12">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Article Image */}
+            <div className="text-center">
+              <div className="inline-block h-[300px] w-full">
+                <Image
+                  src={article.image || "/placeholder.svg"}
+                  alt={article.title}
+                  width={400}
+                  height={300}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <p className="text-sm mt-2 text-gray-600" style={{ fontFamily: "serif" }}>
+                Featured Image
+              </p>
+            </div>
+
+            {/* YouTube Video Frame */}
+            {article.videoId && (
+              <div className="text-center">
+                <div className="border-2 border-black bg-black h-[300px] w-full">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src={`https://www.youtube.com/embed/${article.videoId}?autoplay=1&mute=1`}
+                    title={`${article.title} - Video`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-sm mt-2 text-gray-600" style={{ fontFamily: "serif" }}>
+                  Related Video Content
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
@@ -244,7 +276,6 @@ export default async function ArticleDetailPage({
           </div>
 
           <div className="space-y-4">
-
             <div className="text-lg leading-relaxed text-black text-justify" style={{ fontFamily: "serif" }}>
               {article.content
                 ?.split("\n\n")
